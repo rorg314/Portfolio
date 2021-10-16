@@ -1,0 +1,1645 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>corpus API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>corpus</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">from numpy import append
+import pandas as pd
+import re
+import math
+from collections import defaultdict
+import time
+
+# --------- Gensim --------- #
+from gensim import corpora
+from gensim import models
+from gensim import similarities
+
+from src.fileorganiser.general import ParsePath
+
+
+# ======================================================== #
+# ===================== BUILD CORPUS ===================== #
+# ======================================================== #
+
+class FileCorpus():
+    &#39;&#39;&#39;
+    Class:
+    ------
+    Class that holds the corpus consisting of the list of all file paths, where each document in the corpus is an individual file path (split into parts).
+    
+    &#39;&#39;&#39;
+
+    def __init__(self, fileDf):
+        # Map of corpus list index -&gt; file path
+        self.corpusListIndexPathDict = dict()
+        # Build corpus, dictionary and bowVectors from file dataframe
+        self.corpusList, self.dictionary, self.bowVectors = BuildCorpusList(fileDf, self.corpusListIndexPathDict)
+        # Transformed phrase corpus (set after phrase model built)
+        self.phraseCorpus = None
+
+# Build a corpus containing each file path split into parts
+def BuildCorpusList(fileDf:pd.DataFrame, corpusIndexPathDict):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Build the list of all file paths (split into parts) to use when constructing the corpus. 
+
+    File paths are split into parts using the Path.parts attribute. The filename is further split into individual parts on delimiters such as  _ , + &amp; ; and CamelCase. 
+    All parts are then lowered for consistency. 
+
+    Singular occuring tokens are ignored from the corpus, as well as purely numerical strings (excluding four digit strings which may correspond to year dates).
+
+    Each document (split file path) in the corpus is then stored in the corpus list as a list of token strings, in addition to a separate list containing the bag of words (bow) vector representation.
+
+    The dict corpusIndexPathDict stores the index (in the corpus list) -&gt; file path
+    
+    Args:
+    -----
+        fileDf : pd.DataFrame
+            #: The file dataframe to use to construct the corpus
+        corpusIndexPathDict : dict[int] = Path
+            #: Dict to store list index -&gt; file path
+    
+    Outputs:
+    --------
+        corpus : list[list[str]]
+            #: The list of corpus documents
+        dictionary : corpora.dictionary
+            #: The gensim corpus dictionary
+        bowVectors : list[(int, ... , int)]
+            #: Bag of word (bow) vector representation of each document
+    
+    &#39;&#39;&#39;
+    
+    corpusList = list()
+
+    for idx, path in enumerate(fileDf.index.tolist()):
+        path = ParsePath(path)
+        # Split path into parts
+        parts = list(path.parts)
+        # Skip drive part
+        parts.remove(parts[0])
+        # Remove extension from filename
+        parts[-1] = path.stem
+        
+        # Split and lower each part on any delimiters/camelcase
+        processedParts = list()
+        for part in parts:
+            splitPart = SplitAndLowerString(part)
+            processedParts.extend(splitPart) 
+        
+        # Add to corpus
+        corpusList.append(processedParts)
+        # Associate file path with corpus list index
+        corpusIndexPathDict[idx] = path 
+
+    # Remove any singular tokens that only occur once
+    corpus = RemoveSingularOccurences(corpusList)
+
+    # Associate each token in the corpus with unique integer
+    dictionary = corpora.Dictionary(corpus)
+
+    # Convert each document to a bag-of-words vector
+    bowVectors = [dictionary.doc2bow(doc) for doc in corpus]
+
+    return corpus, dictionary, bowVectors
+
+# Remove any tokens that only appear once in the corpus (likely typo or irrelevant)
+def RemoveSingularOccurences(corpus):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Removes any tokens that only occur once throughout the corpus.
+
+    Args:
+    -----
+        corpus : list[list[str]]
+            #: The list of corpus documents
+    
+    Outputs:
+    --------
+        processedCorpus : list[list[str]]
+            #: The list of corpus documents with singular occurences removed
+    
+    &#39;&#39;&#39;
+    frequency = defaultdict(int)
+    for document in corpus:
+        for token in document:
+            frequency[token] += 1
+
+    # Remove singular occuring tokens
+    processedCorpus = [[token for token in document if frequency[token] &gt; 1] for document in corpus]
+
+    return processedCorpus
+
+# Process strings: split on delimiters and camelcase, then make lowercase
+def SplitAndLowerString(string):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Splits a string on delimiters and CamelCase and then lowers the string, returning the list of tokens from the string.
+
+    Args:
+    -----
+        string : str
+            #: String to be processed
+    
+    Outputs:
+    --------
+        processed : list[str]
+            #: The list of tokens from the string
+    
+    &#39;&#39;&#39;
+    # Split on delimiters
+    delimSplit = SplitOnDelimiters(string)
+
+    # Further split on camelcase (if any)
+    camelSplit = list()
+    for split in delimSplit:
+        _split = SplitCamelCase(split)
+        camelSplit.extend(_split)
+    lowers = [split.lower() for split in camelSplit]
+    
+    # Remove splits with 2 characters or less
+    _processed = [lower for lower in lowers if len(lower) &gt; 2]
+
+    # Remove any purely numerical strings
+    processed = RemoveNumericalStrings(_processed)
+
+    return processed
+
+
+# Split a string with any accepted delimiters (space) - , _ + &amp; ; [ ] () 
+def SplitOnDelimiters(string):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Splits a string on delimiters
+
+    Args:
+    -----
+        string : str
+            #: String to be processed
+    
+    Outputs:
+    --------
+        words : list[str]
+            #: The split string
+    
+    &#39;&#39;&#39;
+    # Regex for matching on delimiters
+    words = re.compile(r&#39;&#39;&#39;
+    [ _,+&amp;;\-\[\]\(\)] # FIXME include option to change allowed delimiters depending on OS
+    &#39;&#39;&#39;, re.VERBOSE).split(string)
+
+    # Remove empty strings
+    return [word for word in words if word != &#39;&#39;] 
+
+
+# Split a string on camelcase
+def SplitCamelCase(string):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Splits a string on CamelCase
+
+    Args:
+    -----
+        string : str
+            #: String to be processed
+    
+    Outputs:
+    --------
+        words : list[str]
+            #: The split string
+    &#39;&#39;&#39;
+    # RegEx (see https://stackoverflow.com/questions/29916065/how-to-do-camelcase-split-in-python)
+    words = re.compile(r&#39;&#39;&#39;
+    # Find words in a string. 
+    [A-Z]+(?=[A-Z][a-z]) |  # All upper case before a capitalized word
+    [A-Z]?[a-z]+ |  # Capitalized words / all lower case
+    [A-Z]+ |  # All upper case
+    \d+  # Numbers
+    &#39;&#39;&#39;, re.VERBOSE).findall(string)
+    return words
+
+
+# Remove purely numerical string splits (include year strings like 1984 etc)
+def RemoveNumericalStrings(stringList, includeYears=True):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Removes any purely numerical strings from a list of strings. Ignores four character strings if includeYears=True.
+
+    Args:
+    -----
+        stringList : list[str]
+            #: String list to be processed
+    Kwargs:
+    ------
+        includeYears : bool : default=True
+            #: If true, ignore four character numerical strings that may correspond to a year. 
+    
+    Outputs:
+    --------
+        characterStrings : list[str]
+            #: The strings with purely numerical strings removed
+    &#39;&#39;&#39;
+    characterStrings = list()
+    for string in stringList:
+        # Check if string contains any non-numerical characters
+        if(string.lower().islower()):
+            characterStrings.append(string)
+        else:
+            # Check if string is four characters (likely a year)
+            if(includeYears and len(string) == 4):
+                characterStrings.append(string)
+            continue
+    
+    return characterStrings
+
+
+
+# ======================================================== #
+# ================== TRAIN GENSIM MODEL ================== #
+# ======================================================== #
+
+
+# Class to hold all models
+class ModelCollection():
+    &#39;&#39;&#39;
+    Class:
+    ------
+    Class that holds the various gensim models trained on the file corpus. Models are trained on construction.
+
+    Args:
+    -----
+        corpus : FileCorpus
+            #: The file corpus on which to train the models
+
+    &#39;&#39;&#39;
+
+    def __init__(self, corpus:FileCorpus):
+        # FileCorpus these models are built from
+        self.corpus = corpus
+        # Each model is stored as double (model, similarity matrix) - built after init
+        self.tfidf = (None, None)
+        # LSI after tfidf model
+        self.tfidf_lsi = (None, None)
+        # LSI model
+        self.lsi = (None, None)
+        
+        # Word2Vec model - most_similar method contained in .wv object 
+        self.w2v = None
+        # Phrases model
+        self.phrases = None
+        # w2v model using transformed phrase corpus
+        self.vecPhrases = None
+
+        # Train all models with the given corpus
+        TrainModels(corpus, self)
+
+        self.topics = self.lsi[0].print_topics()
+        
+
+# Train a variety of gensim models using the file corpus
+def TrainModels(corpus:FileCorpus, models:ModelCollection):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Trains a variety of gensim models on the specified FileCorpus and stores the trained models in the ModelCollection object.
+
+    Args:
+    -----
+        corpus : FileCorpus
+            #: The file corpus on which to train the models
+        models : ModelCollection
+            #: To store the models
+    
+    &#39;&#39;&#39;
+    # TfIdf model and similarity matrix
+    tfidf_model, tfidf_index = BuildTfIdfModel(corpus)
+    models.tfidf = (tfidf_model, tfidf_index)
+    
+    # LSI after tfidf model and similarity matrix 
+    lsi_model, lsi_index = BuildLSIModel(corpus, numTopics=200)
+    models.lsi = (lsi_model, lsi_index)
+
+    # LSI after tfidf model and similarity matrix 
+    tfidf_lsi_model, tfidf_lsi_index = BuildLSIAfterTfidfModel(corpus, numTopics=200)
+    models.tfidf_lsi = (tfidf_lsi_model, tfidf_lsi_index)
+
+    # Word2Vec and model (for similarity use .wv word vectors object)
+    models.w2v = BuildWord2VecModel(corpus)
+
+    # Phrases model and phrases w2v model
+    models.phrases, models.vecPhrases = BuildPhraseModel(corpus)
+
+
+# Build a tf/idf model and index the similarity matrix
+def BuildTfIdfModel(corpus:FileCorpus):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Trains a term frequency / inverse document frequency model.
+
+    Returns the model transformation and the similarity matrix index
+
+    Args:
+    -----
+        corpus : FileCorpus
+            #: The file corpus on which to train the model
+
+    Outputs:
+    --------
+        tfidfModel : models.TfidfModel
+            #: TfIdf model transformation
+        index : similarities.SparseMatrixSimilarity
+            #: Similarity matrix for the TfIdf model
+    
+    &#39;&#39;&#39;
+    # Build term-frequency / inverse-document-frequency model
+    tfidfModel = models.TfidfModel(corpus.bowVectors)
+
+    # Dimensionality of feature vectors (number of unique tokens)
+    dim = len(corpus.dictionary.token2id)
+
+    # Create similarity matrix index object
+    index = similarities.SparseMatrixSimilarity(tfidfModel[corpus.bowVectors], num_features=dim)
+
+    return tfidfModel, index
+
+
+def BuildLSIModel(corpus:FileCorpus, numTopics=200):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Trains an LSI model with the specified number of topics.
+
+    Returns the model transformation and the similarity matrix index
+
+    Args:
+    -----
+        corpus : FileCorpus
+            #: The file corpus on which to train the model
+    Kwargs:
+    -------
+        numTopics : int : default=200
+            #: Number of topics used for the LSI decomposition
+
+    Outputs:
+    --------
+        lsiModel : models.LsiModel
+            #: LSI model transformation
+        index : similarities.Similarity
+            #: Similarity matrix for the LSI model
+    
+    &#39;&#39;&#39;
+    # Create lsi model with numTopics dimensionality 
+    lsiModel = models.LsiModel(corpus.bowVectors, id2word=corpus.dictionary, num_topics=numTopics)
+    
+    # Dimensionality of feature vectors (number of unique tokens)
+    dim = len(corpus.dictionary.token2id)
+    
+    # Create similarity matrix index object
+    index = similarities.Similarity(None, lsiModel[corpus.bowVectors], num_features=dim)
+
+    topics = lsiModel.print_topics(50)
+
+    return lsiModel, index
+
+
+# Build the LSI model ontop the tfidf model
+def BuildLSIAfterTfidfModel(corpus:FileCorpus, numTopics=200):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Trains an LSI model after the TfIdf model transformation has been applied.
+
+    Returns the model transformation and the similarity matrix index
+
+    Args:
+    -----
+        corpus : FileCorpus
+            #: The file corpus on which to train the model
+    Kwargs:
+    -------
+        numTopics : int : default=200
+            #: Number of topics used for the LSI decomposition
+
+    Outputs:
+    --------
+        lsiModel : models.LsiModel
+            #: LSI model transformation
+        index : similarities.Similarity
+            #: Similarity matrix for the LSI model
+    
+    &#39;&#39;&#39;
+    
+    # Build the tfidf model
+    tfidfModel, tfidfindex = BuildTfIdfModel(corpus)
+    # Transform the original corpus using the tfidf model
+    tfidfCorpus = tfidfModel[corpus.bowVectors]
+
+    # Use the transformed corpus to build the LSI model
+    lsiModel = models.LsiModel(tfidfCorpus, id2word=corpus.dictionary, num_topics=numTopics)
+    
+    # Dimensionality of feature vectors (number of unique tokens)
+    dim = len(corpus.dictionary.token2id)
+
+    # Create similarity matrix index object for the lsi model and corpus
+    index = similarities.Similarity(None, lsiModel[tfidfCorpus], num_features=dim)
+
+    return lsiModel, index
+
+
+# Build a word2vec and multigram phrase model
+def BuildWord2VecModel(corpus:FileCorpus):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Trains a Word2Vec model. Similarity method is contained within the w2vModel.wv wordvector attribute wv.most_similar.
+
+
+    Args:
+    -----
+        corpus : FileCorpus
+            #: The file corpus on which to train the model
+    
+    Outputs:
+    --------
+        w2vModel : models.Word2Vec
+            #: LSI model transformation
+    
+    &#39;&#39;&#39;    
+    # Train a regular word2vec model
+    w2vModel = models.Word2Vec(sentences=corpus.corpusList, min_count=2)
+    
+    return w2vModel
+
+
+# Build the phrase model
+def BuildPhraseModel(corpus:FileCorpus):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Builds a phrase model and uses it to train a Word2Vec model. 
+
+    Args:
+    -----
+        corpus : FileCorpus
+            #: The file corpus on which to train the model
+    
+    Outputs:
+    --------
+        phraseModel : models.Phrases
+            #: Phrase model transformation
+        phraseVecModel : models.Word2Vec
+            #: Word2Vec model on the transformed phrase corpus
+    
+    &#39;&#39;&#39;
+    # Train a phrase model
+    phraseModel = models.Phrases(sentences=corpus.corpusList, min_count=2, 
+        connector_words=models.phrases.ENGLISH_CONNECTOR_WORDS)
+
+    # Train a word2Vec model with the transformed phrase corpus
+    phraseVecModel = models.Word2Vec(phraseModel[corpus.corpusList], min_count=2)
+    
+    return phraseModel, phraseVecModel
+
+# ======================================================== #
+# ===================== QUERY MODELS ===================== #
+# ======================================================== #
+
+class ModelQuery():
+    &#39;&#39;&#39;
+    Class:
+    ------
+
+    Class that stores the result of querying multiple models stored in the ModelCollection.
+
+    The queryStr can contain multiple tokens and is processed into a tokenised document similarly to how the file paths were processed.
+    
+    &#39;&#39;&#39;
+    
+    def __init__(self, corpus:FileCorpus, models:ModelCollection, queryStr:str):
+        # Original query string
+        self.queryStr = queryStr
+        # Processed query - lowered and split into parts
+        self.queryParts = SplitAndLowerString(self.queryStr)
+        # Convert query into bow vector (removes query tokens not in corpus)
+        self.queryBow = corpus.dictionary.doc2bow(self.queryParts)
+
+        # --- QUERY MODEL RESULTS --- #
+        self.tfidf_sim = DocSimilarityQuery(self.queryBow,models.tfidf[0], models.tfidf[1], corpus)
+        self.tfidf_lsi_sim = DocSimilarityQuery(self.queryBow, models.tfidf_lsi[0], models.tfidf_lsi[1], corpus)
+        self.lsi_sim = DocSimilarityQuery(self.queryBow, models.lsi[0], models.lsi[1], corpus)
+        self.w2v_sim = models.w2v.wv.most_similar(self.queryBow, topn=100)
+        self.queryPartSims = Word2VecQuery(self.queryBow, models.w2v, corpus)
+        self.phrase_sim = models.phrases[self.queryBow]
+        self.phraseVec_sim = models.vecPhrases.wv.most_similar(self.queryBow, topn=100)
+
+
+# Query a model and produce the sorted list of (similar document, score)
+def DocSimilarityQuery(queryBow, model, index, corpus:FileCorpus):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Perform a similarity query from the specified model, using the query bow vector. 
+
+    Returns a sorted list of scores of the form (similar document, score). 
+    The similar documents are converted from their bow vector representation back to the original file path using the corpusListIndexPathDict.
+
+    Args:
+    -----
+        queryBow : list[(int, int)]
+            #: bow vector representation of the query
+        model : models. ..
+            #: Model to query
+        index : similarities.Similarity
+            #: Similarity matrix of the model
+        corpus: FileCorpus
+            #: File corpus used to train the model
+    
+    Outputs:
+    --------
+        documentScores : list[(Path, score)]
+            #: Scores for each similar document (file path)
+    &#39;&#39;&#39;
+    
+    # Transform the query into the model space (eg tfidf or LSI space)
+    queryVec = model[queryBow]
+    # Query the model similarity index
+    scores = index[queryVec]
+    # Sort list of scores
+    sortedScores = sorted(enumerate(scores), key=lambda item: -item[1])
+    # Replace docId with token name (and ignore zero scores)
+    documentScores = [(corpus.corpusListIndexPathDict[score[0]], score[1]) for score in sortedScores if abs(score[1]) &gt; 0]
+
+    return documentScores
+
+
+def Word2VecQuery(queryBow, w2vModel, corpus):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Perform a similarity query from the word2Vec model, using the query bow vector. 
+    
+    Returns a dict of token -&gt; similar tokens
+
+    Args:
+    -----
+        queryBow : list[(int, int)]
+            #: bow vector representation of the query
+        w2vModel : models.Word2Vec
+            #: Model to query
+        corpus: FileCorpus
+            #: File corpus used to train the model
+    
+    Outputs:
+    --------
+        partSimilarTokensDict : dict[str] = 
+            #: Dict with token -&gt; similar tokens
+    &#39;&#39;&#39;
+    partSimilarTokensDict = dict()
+    for token in queryBow:
+        similarTokenScores = w2vModel.wv.most_similar(token)
+        
+        partSimilarTokensDict[corpus.dictionary.id2token[token[0]]] = [score[0] for score in similarTokenScores]
+    return partSimilarTokensDict
+
+# UNUSED
+
+# # Process a query string into individual parts and phrases - then check if queries exist in corpus
+# def ProcessQuery(query:str):
+#     queryParts = SplitAndLowerString(query)
+
+#     #queryPhrases = FindPossiblePhrases(queryParts)
+
+#     return queryParts#, queryPhrases
+
+
+# # Find the possible n-gram phrases within a query, up to n = max_length 
+# def FindPossiblePhrases(queryParts:list[str], max_length=3):
+
+#     numWords = len(queryParts)
+#     # Dict of N -&gt; phrases
+#     allNgramPhraseDict = defaultdict(list)
+    
+#     # Range is zero based so last n will be max_length if end of range is max_length + 1
+#     for n in range(2, max_length + 1):
+#         # Stop if trying to find phrases longer than number of words
+#         if(n &gt; numWords):
+#             break
+#         # Find all possible n-gram phrases
+#         for idx, startWord in enumerate(queryParts):
+#             phrase = startWord 
+#             # Add the next words up to n 
+#             for i in range(1, n):
+#                 # Phrase model expects phrases delimited with underscores
+#                 if(idx + i &lt; numWords):
+#                     phrase += &#34;_&#34; + queryParts[idx + i]
+#                 else:
+#                     # Reached end of sentence, add phrase if contains more than one word
+#                     if(i &gt; 1):
+#                         allNgramPhraseDict[i].append(phrase)
+#             allNgramPhraseDict[n].append(phrase)
+    
+#     return allNgramPhraseDict
+    </code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="corpus.BuildCorpusList"><code class="name flex">
+<span>def <span class="ident">BuildCorpusList</span></span>(<span>fileDf: pandas.core.frame.DataFrame, corpusIndexPathDict)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description</h2>
+<p>Build the list of all file paths (split into parts) to use when constructing the corpus. </p>
+<p>File paths are split into parts using the Path.parts attribute. The filename is further split into individual parts on delimiters such as
+_ , + &amp; ; and CamelCase.
+All parts are then lowered for consistency. </p>
+<p>Singular occuring tokens are ignored from the corpus, as well as purely numerical strings (excluding four digit strings which may correspond to year dates).</p>
+<p>Each document (split file path) in the corpus is then stored in the corpus list as a list of token strings, in addition to a separate list containing the bag of words (bow) vector representation.</p>
+<p>The dict corpusIndexPathDict stores the index (in the corpus list) -&gt; file path</p>
+<h2 id="args">Args:</h2>
+<pre><code>fileDf : pd.DataFrame
+    #: The file dataframe to use to construct the corpus
+corpusIndexPathDict : dict[int] = Path
+    #: Dict to store list index -&gt; file path
+</code></pre>
+<h2 id="outputs">Outputs:</h2>
+<pre><code>corpus : list[list[str]]
+    #: The list of corpus documents
+dictionary : corpora.dictionary
+    #: The gensim corpus dictionary
+bowVectors : list[(int, ... , int)]
+    #: Bag of word (bow) vector representation of each document
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def BuildCorpusList(fileDf:pd.DataFrame, corpusIndexPathDict):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Build the list of all file paths (split into parts) to use when constructing the corpus. 
+
+    File paths are split into parts using the Path.parts attribute. The filename is further split into individual parts on delimiters such as  _ , + &amp; ; and CamelCase. 
+    All parts are then lowered for consistency. 
+
+    Singular occuring tokens are ignored from the corpus, as well as purely numerical strings (excluding four digit strings which may correspond to year dates).
+
+    Each document (split file path) in the corpus is then stored in the corpus list as a list of token strings, in addition to a separate list containing the bag of words (bow) vector representation.
+
+    The dict corpusIndexPathDict stores the index (in the corpus list) -&gt; file path
+    
+    Args:
+    -----
+        fileDf : pd.DataFrame
+            #: The file dataframe to use to construct the corpus
+        corpusIndexPathDict : dict[int] = Path
+            #: Dict to store list index -&gt; file path
+    
+    Outputs:
+    --------
+        corpus : list[list[str]]
+            #: The list of corpus documents
+        dictionary : corpora.dictionary
+            #: The gensim corpus dictionary
+        bowVectors : list[(int, ... , int)]
+            #: Bag of word (bow) vector representation of each document
+    
+    &#39;&#39;&#39;
+    
+    corpusList = list()
+
+    for idx, path in enumerate(fileDf.index.tolist()):
+        path = ParsePath(path)
+        # Split path into parts
+        parts = list(path.parts)
+        # Skip drive part
+        parts.remove(parts[0])
+        # Remove extension from filename
+        parts[-1] = path.stem
+        
+        # Split and lower each part on any delimiters/camelcase
+        processedParts = list()
+        for part in parts:
+            splitPart = SplitAndLowerString(part)
+            processedParts.extend(splitPart) 
+        
+        # Add to corpus
+        corpusList.append(processedParts)
+        # Associate file path with corpus list index
+        corpusIndexPathDict[idx] = path 
+
+    # Remove any singular tokens that only occur once
+    corpus = RemoveSingularOccurences(corpusList)
+
+    # Associate each token in the corpus with unique integer
+    dictionary = corpora.Dictionary(corpus)
+
+    # Convert each document to a bag-of-words vector
+    bowVectors = [dictionary.doc2bow(doc) for doc in corpus]
+
+    return corpus, dictionary, bowVectors</code></pre>
+</details>
+</dd>
+<dt id="corpus.BuildLSIAfterTfidfModel"><code class="name flex">
+<span>def <span class="ident">BuildLSIAfterTfidfModel</span></span>(<span>corpus: <a title="corpus.FileCorpus" href="#corpus.FileCorpus">FileCorpus</a>, numTopics=200)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description</h2>
+<p>Trains an LSI model after the TfIdf model transformation has been applied.</p>
+<p>Returns the model transformation and the similarity matrix index</p>
+<h2 id="args">Args:</h2>
+<pre><code>corpus : FileCorpus
+    #: The file corpus on which to train the model
+</code></pre>
+<h2 id="kwargs">Kwargs:</h2>
+<pre><code>numTopics : int : default=200
+    #: Number of topics used for the LSI decomposition
+</code></pre>
+<h2 id="outputs">Outputs:</h2>
+<pre><code>lsiModel : models.LsiModel
+    #: LSI model transformation
+index : similarities.Similarity
+    #: Similarity matrix for the LSI model
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def BuildLSIAfterTfidfModel(corpus:FileCorpus, numTopics=200):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Trains an LSI model after the TfIdf model transformation has been applied.
+
+    Returns the model transformation and the similarity matrix index
+
+    Args:
+    -----
+        corpus : FileCorpus
+            #: The file corpus on which to train the model
+    Kwargs:
+    -------
+        numTopics : int : default=200
+            #: Number of topics used for the LSI decomposition
+
+    Outputs:
+    --------
+        lsiModel : models.LsiModel
+            #: LSI model transformation
+        index : similarities.Similarity
+            #: Similarity matrix for the LSI model
+    
+    &#39;&#39;&#39;
+    
+    # Build the tfidf model
+    tfidfModel, tfidfindex = BuildTfIdfModel(corpus)
+    # Transform the original corpus using the tfidf model
+    tfidfCorpus = tfidfModel[corpus.bowVectors]
+
+    # Use the transformed corpus to build the LSI model
+    lsiModel = models.LsiModel(tfidfCorpus, id2word=corpus.dictionary, num_topics=numTopics)
+    
+    # Dimensionality of feature vectors (number of unique tokens)
+    dim = len(corpus.dictionary.token2id)
+
+    # Create similarity matrix index object for the lsi model and corpus
+    index = similarities.Similarity(None, lsiModel[tfidfCorpus], num_features=dim)
+
+    return lsiModel, index</code></pre>
+</details>
+</dd>
+<dt id="corpus.BuildLSIModel"><code class="name flex">
+<span>def <span class="ident">BuildLSIModel</span></span>(<span>corpus: <a title="corpus.FileCorpus" href="#corpus.FileCorpus">FileCorpus</a>, numTopics=200)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description</h2>
+<p>Trains an LSI model with the specified number of topics.</p>
+<p>Returns the model transformation and the similarity matrix index</p>
+<h2 id="args">Args:</h2>
+<pre><code>corpus : FileCorpus
+    #: The file corpus on which to train the model
+</code></pre>
+<h2 id="kwargs">Kwargs:</h2>
+<pre><code>numTopics : int : default=200
+    #: Number of topics used for the LSI decomposition
+</code></pre>
+<h2 id="outputs">Outputs:</h2>
+<pre><code>lsiModel : models.LsiModel
+    #: LSI model transformation
+index : similarities.Similarity
+    #: Similarity matrix for the LSI model
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def BuildLSIModel(corpus:FileCorpus, numTopics=200):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Trains an LSI model with the specified number of topics.
+
+    Returns the model transformation and the similarity matrix index
+
+    Args:
+    -----
+        corpus : FileCorpus
+            #: The file corpus on which to train the model
+    Kwargs:
+    -------
+        numTopics : int : default=200
+            #: Number of topics used for the LSI decomposition
+
+    Outputs:
+    --------
+        lsiModel : models.LsiModel
+            #: LSI model transformation
+        index : similarities.Similarity
+            #: Similarity matrix for the LSI model
+    
+    &#39;&#39;&#39;
+    # Create lsi model with numTopics dimensionality 
+    lsiModel = models.LsiModel(corpus.bowVectors, id2word=corpus.dictionary, num_topics=numTopics)
+    
+    # Dimensionality of feature vectors (number of unique tokens)
+    dim = len(corpus.dictionary.token2id)
+    
+    # Create similarity matrix index object
+    index = similarities.Similarity(None, lsiModel[corpus.bowVectors], num_features=dim)
+
+    topics = lsiModel.print_topics(50)
+
+    return lsiModel, index</code></pre>
+</details>
+</dd>
+<dt id="corpus.BuildPhraseModel"><code class="name flex">
+<span>def <span class="ident">BuildPhraseModel</span></span>(<span>corpus: <a title="corpus.FileCorpus" href="#corpus.FileCorpus">FileCorpus</a>)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description</h2>
+<p>Builds a phrase model and uses it to train a Word2Vec model. </p>
+<h2 id="args">Args:</h2>
+<pre><code>corpus : FileCorpus
+    #: The file corpus on which to train the model
+</code></pre>
+<h2 id="outputs">Outputs:</h2>
+<pre><code>phraseModel : models.Phrases
+    #: Phrase model transformation
+phraseVecModel : models.Word2Vec
+    #: Word2Vec model on the transformed phrase corpus
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def BuildPhraseModel(corpus:FileCorpus):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Builds a phrase model and uses it to train a Word2Vec model. 
+
+    Args:
+    -----
+        corpus : FileCorpus
+            #: The file corpus on which to train the model
+    
+    Outputs:
+    --------
+        phraseModel : models.Phrases
+            #: Phrase model transformation
+        phraseVecModel : models.Word2Vec
+            #: Word2Vec model on the transformed phrase corpus
+    
+    &#39;&#39;&#39;
+    # Train a phrase model
+    phraseModel = models.Phrases(sentences=corpus.corpusList, min_count=2, 
+        connector_words=models.phrases.ENGLISH_CONNECTOR_WORDS)
+
+    # Train a word2Vec model with the transformed phrase corpus
+    phraseVecModel = models.Word2Vec(phraseModel[corpus.corpusList], min_count=2)
+    
+    return phraseModel, phraseVecModel</code></pre>
+</details>
+</dd>
+<dt id="corpus.BuildTfIdfModel"><code class="name flex">
+<span>def <span class="ident">BuildTfIdfModel</span></span>(<span>corpus: <a title="corpus.FileCorpus" href="#corpus.FileCorpus">FileCorpus</a>)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description</h2>
+<p>Trains a term frequency / inverse document frequency model.</p>
+<p>Returns the model transformation and the similarity matrix index</p>
+<h2 id="args">Args:</h2>
+<pre><code>corpus : FileCorpus
+    #: The file corpus on which to train the model
+</code></pre>
+<h2 id="outputs">Outputs:</h2>
+<pre><code>tfidfModel : models.TfidfModel
+    #: TfIdf model transformation
+index : similarities.SparseMatrixSimilarity
+    #: Similarity matrix for the TfIdf model
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def BuildTfIdfModel(corpus:FileCorpus):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Trains a term frequency / inverse document frequency model.
+
+    Returns the model transformation and the similarity matrix index
+
+    Args:
+    -----
+        corpus : FileCorpus
+            #: The file corpus on which to train the model
+
+    Outputs:
+    --------
+        tfidfModel : models.TfidfModel
+            #: TfIdf model transformation
+        index : similarities.SparseMatrixSimilarity
+            #: Similarity matrix for the TfIdf model
+    
+    &#39;&#39;&#39;
+    # Build term-frequency / inverse-document-frequency model
+    tfidfModel = models.TfidfModel(corpus.bowVectors)
+
+    # Dimensionality of feature vectors (number of unique tokens)
+    dim = len(corpus.dictionary.token2id)
+
+    # Create similarity matrix index object
+    index = similarities.SparseMatrixSimilarity(tfidfModel[corpus.bowVectors], num_features=dim)
+
+    return tfidfModel, index</code></pre>
+</details>
+</dd>
+<dt id="corpus.BuildWord2VecModel"><code class="name flex">
+<span>def <span class="ident">BuildWord2VecModel</span></span>(<span>corpus: <a title="corpus.FileCorpus" href="#corpus.FileCorpus">FileCorpus</a>)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description</h2>
+<p>Trains a Word2Vec model. Similarity method is contained within the w2vModel.wv wordvector attribute wv.most_similar.</p>
+<h2 id="args">Args:</h2>
+<pre><code>corpus : FileCorpus
+    #: The file corpus on which to train the model
+</code></pre>
+<h2 id="outputs">Outputs:</h2>
+<pre><code>w2vModel : models.Word2Vec
+    #: LSI model transformation
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def BuildWord2VecModel(corpus:FileCorpus):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Trains a Word2Vec model. Similarity method is contained within the w2vModel.wv wordvector attribute wv.most_similar.
+
+
+    Args:
+    -----
+        corpus : FileCorpus
+            #: The file corpus on which to train the model
+    
+    Outputs:
+    --------
+        w2vModel : models.Word2Vec
+            #: LSI model transformation
+    
+    &#39;&#39;&#39;    
+    # Train a regular word2vec model
+    w2vModel = models.Word2Vec(sentences=corpus.corpusList, min_count=2)
+    
+    return w2vModel</code></pre>
+</details>
+</dd>
+<dt id="corpus.DocSimilarityQuery"><code class="name flex">
+<span>def <span class="ident">DocSimilarityQuery</span></span>(<span>queryBow, model, index, corpus: <a title="corpus.FileCorpus" href="#corpus.FileCorpus">FileCorpus</a>)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description</h2>
+<p>Perform a similarity query from the specified model, using the query bow vector. </p>
+<p>Returns a sorted list of scores of the form (similar document, score).
+The similar documents are converted from their bow vector representation back to the original file path using the corpusListIndexPathDict.</p>
+<h2 id="args">Args:</h2>
+<pre><code>queryBow : list[(int, int)]
+    #: bow vector representation of the query
+model : models. ..
+    #: Model to query
+index : similarities.Similarity
+    #: Similarity matrix of the model
+corpus: FileCorpus
+    #: File corpus used to train the model
+</code></pre>
+<h2 id="outputs">Outputs:</h2>
+<pre><code>documentScores : list[(Path, score)]
+    #: Scores for each similar document (file path)
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def DocSimilarityQuery(queryBow, model, index, corpus:FileCorpus):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Perform a similarity query from the specified model, using the query bow vector. 
+
+    Returns a sorted list of scores of the form (similar document, score). 
+    The similar documents are converted from their bow vector representation back to the original file path using the corpusListIndexPathDict.
+
+    Args:
+    -----
+        queryBow : list[(int, int)]
+            #: bow vector representation of the query
+        model : models. ..
+            #: Model to query
+        index : similarities.Similarity
+            #: Similarity matrix of the model
+        corpus: FileCorpus
+            #: File corpus used to train the model
+    
+    Outputs:
+    --------
+        documentScores : list[(Path, score)]
+            #: Scores for each similar document (file path)
+    &#39;&#39;&#39;
+    
+    # Transform the query into the model space (eg tfidf or LSI space)
+    queryVec = model[queryBow]
+    # Query the model similarity index
+    scores = index[queryVec]
+    # Sort list of scores
+    sortedScores = sorted(enumerate(scores), key=lambda item: -item[1])
+    # Replace docId with token name (and ignore zero scores)
+    documentScores = [(corpus.corpusListIndexPathDict[score[0]], score[1]) for score in sortedScores if abs(score[1]) &gt; 0]
+
+    return documentScores</code></pre>
+</details>
+</dd>
+<dt id="corpus.RemoveNumericalStrings"><code class="name flex">
+<span>def <span class="ident">RemoveNumericalStrings</span></span>(<span>stringList, includeYears=True)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description</h2>
+<p>Removes any purely numerical strings from a list of strings. Ignores four character strings if includeYears=True.</p>
+<h2 id="args">Args:</h2>
+<pre><code>stringList : list[str]
+    #: String list to be processed
+</code></pre>
+<h2 id="kwargs">Kwargs:</h2>
+<pre><code>includeYears : bool : default=True
+    #: If true, ignore four character numerical strings that may correspond to a year.
+</code></pre>
+<h2 id="outputs">Outputs:</h2>
+<pre><code>characterStrings : list[str]
+    #: The strings with purely numerical strings removed
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def RemoveNumericalStrings(stringList, includeYears=True):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Removes any purely numerical strings from a list of strings. Ignores four character strings if includeYears=True.
+
+    Args:
+    -----
+        stringList : list[str]
+            #: String list to be processed
+    Kwargs:
+    ------
+        includeYears : bool : default=True
+            #: If true, ignore four character numerical strings that may correspond to a year. 
+    
+    Outputs:
+    --------
+        characterStrings : list[str]
+            #: The strings with purely numerical strings removed
+    &#39;&#39;&#39;
+    characterStrings = list()
+    for string in stringList:
+        # Check if string contains any non-numerical characters
+        if(string.lower().islower()):
+            characterStrings.append(string)
+        else:
+            # Check if string is four characters (likely a year)
+            if(includeYears and len(string) == 4):
+                characterStrings.append(string)
+            continue
+    
+    return characterStrings</code></pre>
+</details>
+</dd>
+<dt id="corpus.RemoveSingularOccurences"><code class="name flex">
+<span>def <span class="ident">RemoveSingularOccurences</span></span>(<span>corpus)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description</h2>
+<p>Removes any tokens that only occur once throughout the corpus.</p>
+<h2 id="args">Args:</h2>
+<pre><code>corpus : list[list[str]]
+    #: The list of corpus documents
+</code></pre>
+<h2 id="outputs">Outputs:</h2>
+<pre><code>processedCorpus : list[list[str]]
+    #: The list of corpus documents with singular occurences removed
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def RemoveSingularOccurences(corpus):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Removes any tokens that only occur once throughout the corpus.
+
+    Args:
+    -----
+        corpus : list[list[str]]
+            #: The list of corpus documents
+    
+    Outputs:
+    --------
+        processedCorpus : list[list[str]]
+            #: The list of corpus documents with singular occurences removed
+    
+    &#39;&#39;&#39;
+    frequency = defaultdict(int)
+    for document in corpus:
+        for token in document:
+            frequency[token] += 1
+
+    # Remove singular occuring tokens
+    processedCorpus = [[token for token in document if frequency[token] &gt; 1] for document in corpus]
+
+    return processedCorpus</code></pre>
+</details>
+</dd>
+<dt id="corpus.SplitAndLowerString"><code class="name flex">
+<span>def <span class="ident">SplitAndLowerString</span></span>(<span>string)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description</h2>
+<p>Splits a string on delimiters and CamelCase and then lowers the string, returning the list of tokens from the string.</p>
+<h2 id="args">Args:</h2>
+<pre><code>string : str
+    #: String to be processed
+</code></pre>
+<h2 id="outputs">Outputs:</h2>
+<pre><code>processed : list[str]
+    #: The list of tokens from the string
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def SplitAndLowerString(string):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Splits a string on delimiters and CamelCase and then lowers the string, returning the list of tokens from the string.
+
+    Args:
+    -----
+        string : str
+            #: String to be processed
+    
+    Outputs:
+    --------
+        processed : list[str]
+            #: The list of tokens from the string
+    
+    &#39;&#39;&#39;
+    # Split on delimiters
+    delimSplit = SplitOnDelimiters(string)
+
+    # Further split on camelcase (if any)
+    camelSplit = list()
+    for split in delimSplit:
+        _split = SplitCamelCase(split)
+        camelSplit.extend(_split)
+    lowers = [split.lower() for split in camelSplit]
+    
+    # Remove splits with 2 characters or less
+    _processed = [lower for lower in lowers if len(lower) &gt; 2]
+
+    # Remove any purely numerical strings
+    processed = RemoveNumericalStrings(_processed)
+
+    return processed</code></pre>
+</details>
+</dd>
+<dt id="corpus.SplitCamelCase"><code class="name flex">
+<span>def <span class="ident">SplitCamelCase</span></span>(<span>string)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description</h2>
+<p>Splits a string on CamelCase</p>
+<h2 id="args">Args:</h2>
+<pre><code>string : str
+    #: String to be processed
+</code></pre>
+<h2 id="outputs">Outputs:</h2>
+<pre><code>words : list[str]
+    #: The split string
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def SplitCamelCase(string):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Splits a string on CamelCase
+
+    Args:
+    -----
+        string : str
+            #: String to be processed
+    
+    Outputs:
+    --------
+        words : list[str]
+            #: The split string
+    &#39;&#39;&#39;
+    # RegEx (see https://stackoverflow.com/questions/29916065/how-to-do-camelcase-split-in-python)
+    words = re.compile(r&#39;&#39;&#39;
+    # Find words in a string. 
+    [A-Z]+(?=[A-Z][a-z]) |  # All upper case before a capitalized word
+    [A-Z]?[a-z]+ |  # Capitalized words / all lower case
+    [A-Z]+ |  # All upper case
+    \d+  # Numbers
+    &#39;&#39;&#39;, re.VERBOSE).findall(string)
+    return words</code></pre>
+</details>
+</dd>
+<dt id="corpus.SplitOnDelimiters"><code class="name flex">
+<span>def <span class="ident">SplitOnDelimiters</span></span>(<span>string)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description</h2>
+<p>Splits a string on delimiters</p>
+<h2 id="args">Args:</h2>
+<pre><code>string : str
+    #: String to be processed
+</code></pre>
+<h2 id="outputs">Outputs:</h2>
+<pre><code>words : list[str]
+    #: The split string
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def SplitOnDelimiters(string):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Splits a string on delimiters
+
+    Args:
+    -----
+        string : str
+            #: String to be processed
+    
+    Outputs:
+    --------
+        words : list[str]
+            #: The split string
+    
+    &#39;&#39;&#39;
+    # Regex for matching on delimiters
+    words = re.compile(r&#39;&#39;&#39;
+    [ _,+&amp;;\-\[\]\(\)] # FIXME include option to change allowed delimiters depending on OS
+    &#39;&#39;&#39;, re.VERBOSE).split(string)
+
+    # Remove empty strings
+    return [word for word in words if word != &#39;&#39;] </code></pre>
+</details>
+</dd>
+<dt id="corpus.TrainModels"><code class="name flex">
+<span>def <span class="ident">TrainModels</span></span>(<span>corpus: <a title="corpus.FileCorpus" href="#corpus.FileCorpus">FileCorpus</a>, models: <a title="corpus.ModelCollection" href="#corpus.ModelCollection">ModelCollection</a>)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description</h2>
+<p>Trains a variety of gensim models on the specified FileCorpus and stores the trained models in the ModelCollection object.</p>
+<h2 id="args">Args:</h2>
+<pre><code>corpus : FileCorpus
+    #: The file corpus on which to train the models
+models : ModelCollection
+    #: To store the models
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def TrainModels(corpus:FileCorpus, models:ModelCollection):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Trains a variety of gensim models on the specified FileCorpus and stores the trained models in the ModelCollection object.
+
+    Args:
+    -----
+        corpus : FileCorpus
+            #: The file corpus on which to train the models
+        models : ModelCollection
+            #: To store the models
+    
+    &#39;&#39;&#39;
+    # TfIdf model and similarity matrix
+    tfidf_model, tfidf_index = BuildTfIdfModel(corpus)
+    models.tfidf = (tfidf_model, tfidf_index)
+    
+    # LSI after tfidf model and similarity matrix 
+    lsi_model, lsi_index = BuildLSIModel(corpus, numTopics=200)
+    models.lsi = (lsi_model, lsi_index)
+
+    # LSI after tfidf model and similarity matrix 
+    tfidf_lsi_model, tfidf_lsi_index = BuildLSIAfterTfidfModel(corpus, numTopics=200)
+    models.tfidf_lsi = (tfidf_lsi_model, tfidf_lsi_index)
+
+    # Word2Vec and model (for similarity use .wv word vectors object)
+    models.w2v = BuildWord2VecModel(corpus)
+
+    # Phrases model and phrases w2v model
+    models.phrases, models.vecPhrases = BuildPhraseModel(corpus)</code></pre>
+</details>
+</dd>
+<dt id="corpus.Word2VecQuery"><code class="name flex">
+<span>def <span class="ident">Word2VecQuery</span></span>(<span>queryBow, w2vModel, corpus)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="description">Description</h2>
+<p>Perform a similarity query from the word2Vec model, using the query bow vector. </p>
+<p>Returns a dict of token -&gt; similar tokens</p>
+<h2 id="args">Args:</h2>
+<pre><code>queryBow : list[(int, int)]
+    #: bow vector representation of the query
+w2vModel : models.Word2Vec
+    #: Model to query
+corpus: FileCorpus
+    #: File corpus used to train the model
+</code></pre>
+<h2 id="outputs">Outputs:</h2>
+<pre><code>partSimilarTokensDict : dict[str] = 
+    #: Dict with token -&gt; similar tokens
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def Word2VecQuery(queryBow, w2vModel, corpus):
+    &#39;&#39;&#39; 
+    Description
+    -----------
+    Perform a similarity query from the word2Vec model, using the query bow vector. 
+    
+    Returns a dict of token -&gt; similar tokens
+
+    Args:
+    -----
+        queryBow : list[(int, int)]
+            #: bow vector representation of the query
+        w2vModel : models.Word2Vec
+            #: Model to query
+        corpus: FileCorpus
+            #: File corpus used to train the model
+    
+    Outputs:
+    --------
+        partSimilarTokensDict : dict[str] = 
+            #: Dict with token -&gt; similar tokens
+    &#39;&#39;&#39;
+    partSimilarTokensDict = dict()
+    for token in queryBow:
+        similarTokenScores = w2vModel.wv.most_similar(token)
+        
+        partSimilarTokensDict[corpus.dictionary.id2token[token[0]]] = [score[0] for score in similarTokenScores]
+    return partSimilarTokensDict</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="corpus.FileCorpus"><code class="flex name class">
+<span>class <span class="ident">FileCorpus</span></span>
+<span>(</span><span>fileDf)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="class">Class:</h2>
+<p>Class that holds the corpus consisting of the list of all file paths, where each document in the corpus is an individual file path (split into parts).</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class FileCorpus():
+    &#39;&#39;&#39;
+    Class:
+    ------
+    Class that holds the corpus consisting of the list of all file paths, where each document in the corpus is an individual file path (split into parts).
+    
+    &#39;&#39;&#39;
+
+    def __init__(self, fileDf):
+        # Map of corpus list index -&gt; file path
+        self.corpusListIndexPathDict = dict()
+        # Build corpus, dictionary and bowVectors from file dataframe
+        self.corpusList, self.dictionary, self.bowVectors = BuildCorpusList(fileDf, self.corpusListIndexPathDict)
+        # Transformed phrase corpus (set after phrase model built)
+        self.phraseCorpus = None</code></pre>
+</details>
+</dd>
+<dt id="corpus.ModelCollection"><code class="flex name class">
+<span>class <span class="ident">ModelCollection</span></span>
+<span>(</span><span>corpus: <a title="corpus.FileCorpus" href="#corpus.FileCorpus">FileCorpus</a>)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="class">Class:</h2>
+<p>Class that holds the various gensim models trained on the file corpus. Models are trained on construction.</p>
+<h2 id="args">Args:</h2>
+<pre><code>corpus : FileCorpus
+    #: The file corpus on which to train the models
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class ModelCollection():
+    &#39;&#39;&#39;
+    Class:
+    ------
+    Class that holds the various gensim models trained on the file corpus. Models are trained on construction.
+
+    Args:
+    -----
+        corpus : FileCorpus
+            #: The file corpus on which to train the models
+
+    &#39;&#39;&#39;
+
+    def __init__(self, corpus:FileCorpus):
+        # FileCorpus these models are built from
+        self.corpus = corpus
+        # Each model is stored as double (model, similarity matrix) - built after init
+        self.tfidf = (None, None)
+        # LSI after tfidf model
+        self.tfidf_lsi = (None, None)
+        # LSI model
+        self.lsi = (None, None)
+        
+        # Word2Vec model - most_similar method contained in .wv object 
+        self.w2v = None
+        # Phrases model
+        self.phrases = None
+        # w2v model using transformed phrase corpus
+        self.vecPhrases = None
+
+        # Train all models with the given corpus
+        TrainModels(corpus, self)
+
+        self.topics = self.lsi[0].print_topics()</code></pre>
+</details>
+</dd>
+<dt id="corpus.ModelQuery"><code class="flex name class">
+<span>class <span class="ident">ModelQuery</span></span>
+<span>(</span><span>corpus: <a title="corpus.FileCorpus" href="#corpus.FileCorpus">FileCorpus</a>, models: <a title="corpus.ModelCollection" href="#corpus.ModelCollection">ModelCollection</a>, queryStr: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><h2 id="class">Class:</h2>
+<p>Class that stores the result of querying multiple models stored in the ModelCollection.</p>
+<p>The queryStr can contain multiple tokens and is processed into a tokenised document similarly to how the file paths were processed.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class ModelQuery():
+    &#39;&#39;&#39;
+    Class:
+    ------
+
+    Class that stores the result of querying multiple models stored in the ModelCollection.
+
+    The queryStr can contain multiple tokens and is processed into a tokenised document similarly to how the file paths were processed.
+    
+    &#39;&#39;&#39;
+    
+    def __init__(self, corpus:FileCorpus, models:ModelCollection, queryStr:str):
+        # Original query string
+        self.queryStr = queryStr
+        # Processed query - lowered and split into parts
+        self.queryParts = SplitAndLowerString(self.queryStr)
+        # Convert query into bow vector (removes query tokens not in corpus)
+        self.queryBow = corpus.dictionary.doc2bow(self.queryParts)
+
+        # --- QUERY MODEL RESULTS --- #
+        self.tfidf_sim = DocSimilarityQuery(self.queryBow,models.tfidf[0], models.tfidf[1], corpus)
+        self.tfidf_lsi_sim = DocSimilarityQuery(self.queryBow, models.tfidf_lsi[0], models.tfidf_lsi[1], corpus)
+        self.lsi_sim = DocSimilarityQuery(self.queryBow, models.lsi[0], models.lsi[1], corpus)
+        self.w2v_sim = models.w2v.wv.most_similar(self.queryBow, topn=100)
+        self.queryPartSims = Word2VecQuery(self.queryBow, models.w2v, corpus)
+        self.phrase_sim = models.phrases[self.queryBow]
+        self.phraseVec_sim = models.vecPhrases.wv.most_similar(self.queryBow, topn=100)</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="fileorganiser" href="index.html">fileorganiser</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="corpus.BuildCorpusList" href="#corpus.BuildCorpusList">BuildCorpusList</a></code></li>
+<li><code><a title="corpus.BuildLSIAfterTfidfModel" href="#corpus.BuildLSIAfterTfidfModel">BuildLSIAfterTfidfModel</a></code></li>
+<li><code><a title="corpus.BuildLSIModel" href="#corpus.BuildLSIModel">BuildLSIModel</a></code></li>
+<li><code><a title="corpus.BuildPhraseModel" href="#corpus.BuildPhraseModel">BuildPhraseModel</a></code></li>
+<li><code><a title="corpus.BuildTfIdfModel" href="#corpus.BuildTfIdfModel">BuildTfIdfModel</a></code></li>
+<li><code><a title="corpus.BuildWord2VecModel" href="#corpus.BuildWord2VecModel">BuildWord2VecModel</a></code></li>
+<li><code><a title="corpus.DocSimilarityQuery" href="#corpus.DocSimilarityQuery">DocSimilarityQuery</a></code></li>
+<li><code><a title="corpus.RemoveNumericalStrings" href="#corpus.RemoveNumericalStrings">RemoveNumericalStrings</a></code></li>
+<li><code><a title="corpus.RemoveSingularOccurences" href="#corpus.RemoveSingularOccurences">RemoveSingularOccurences</a></code></li>
+<li><code><a title="corpus.SplitAndLowerString" href="#corpus.SplitAndLowerString">SplitAndLowerString</a></code></li>
+<li><code><a title="corpus.SplitCamelCase" href="#corpus.SplitCamelCase">SplitCamelCase</a></code></li>
+<li><code><a title="corpus.SplitOnDelimiters" href="#corpus.SplitOnDelimiters">SplitOnDelimiters</a></code></li>
+<li><code><a title="corpus.TrainModels" href="#corpus.TrainModels">TrainModels</a></code></li>
+<li><code><a title="corpus.Word2VecQuery" href="#corpus.Word2VecQuery">Word2VecQuery</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="corpus.FileCorpus" href="#corpus.FileCorpus">FileCorpus</a></code></h4>
+</li>
+<li>
+<h4><code><a title="corpus.ModelCollection" href="#corpus.ModelCollection">ModelCollection</a></code></h4>
+</li>
+<li>
+<h4><code><a title="corpus.ModelQuery" href="#corpus.ModelQuery">ModelQuery</a></code></h4>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
