@@ -21,4 +21,4 @@ The [Misc](./Uni-Soft/Misc) folder contains several other miscellaneous files.
 
 # Game development
 
-The [GameScreenshots](./GameScreenshots) folder contains screenshots from games that I am currently working on using Unity (C#). The majority of games are either unfinished (except solitaire) or only focus on implementation of technical tools such as voxel terrain generation. 
+The [GameDevScreenshots](./GameDevScreenshots) folder contains screenshots from games that I am currently working on using Unity (C#). The majority of games are either unfinished (except solitaire) or only focus on implementation of technical tools such as voxel terrain generation. 
