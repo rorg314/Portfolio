@@ -7,7 +7,9 @@ This repository contains my digital portfolio, showcasing various aspects of my 
 The [Uni-Soft](./Uni-Soft) folder contains sample documentation/screenshots from the projects I worked on during my placement at Uni-Soft systems. 
 
 ## File Organiser
-The [FileOrganiser](./Uni-Soft/FileOrganiser) folder contains several markdown readme files that I created for the FileOrganiser application whilst at Uni-Soft systems. The [HTML_Documentation](./Uni-Soft/FileOrganiser/HTML_Documentation) folder contains HTML files for the API documentation generated using pdoc (from docstrings).
+The [FileOrganiser](./Uni-Soft/FileOrganiser) folder contains several markdown readme files that I created for the FileOrganiser application whilst at Uni-Soft systems. The [DocumentationSample](./Uni-Soft/FileOrganiser/DocumentationSample) folder contains a sample of the API documentation generated using pdoc (from docstrings). The sample files are PDFs generated from the HTML of the full source API (7 modules), with source code redacted.
+
+
 
 ## SegNet
 
