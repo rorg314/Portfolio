@@ -14,7 +14,7 @@ The [Blockchain](./Blockchain) folder contains resources I produced whilst at Un
 
 - A generic [presentation](./Blockchain/GeneralBlockchainPresentation.pptx) introducing the concepts and technology + a short review of NFTs
 
-- A [document](./Blockchain/NFTs.docx) covering NFTs and the ERC-721 protocol, with some ideas for potential applications.
+- A [document](./Blockchain/NFTs.md) covering NFTs and the ERC-721 protocol, with some ideas for potential applications.
 
 - A [detailed review](./Blockchain/SolanaBlockchain.md) of the Proof of Stake/History architecture used by the Solana blockchain. 
 
