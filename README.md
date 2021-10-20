@@ -1,5 +1,5 @@
 # Rory Whybrow Portfolio
-This repository contains my digital portfolio, showcasing various aspects of my software development skills. For easily viewing images (GitHub website is not great at this), consider cloning this repository!
+This repository contains my digital portfolio, showcasing various aspects of my software development and documentation skills. For easily viewing images (GitHub website is not great at this), consider cloning this repository!
 
 
 # Uni-Soft Systems
