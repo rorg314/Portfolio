@@ -10,13 +10,13 @@ The [Documentation](./Documentation) folder contains sample readme documentation
 
 # Blockchain
 
-The [Blockchain](./Blockchain) folder contains resources I produced whilst at Uni-Soft systems covering various aspects of blockchain technology. 
+The [Blockchain](./Blockchain) folder contains resources I produced whilst at Uni-Soft systems covering various aspects of blockchain technology (documents have been converted to markdown files for ease of viewing in GitHub). 
 
 - A generic [presentation](./Blockchain/GeneralBlockchainPresentation.pptx) introducing the concepts and technology + a short review of NFTs
 
 - A [document](./Blockchain/NFTs.docx) covering NFTs and the ERC-721 protocol, with some ideas for potential applications.
 
-- A [detailed review](./Blockchain/SolanaBlockchain.docx) of the Proof of Stake/History architecture used by the Solana blockchain. 
+- A [detailed review](./Blockchain/SolanaBlockchain.md) of the Proof of Stake/History architecture used by the Solana blockchain. 
 
 # Game development
 
