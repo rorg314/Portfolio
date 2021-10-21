@@ -8,6 +8,10 @@ The [Documentation](./Documentation) folder contains sample readme documentation
 - The [PythonStyleGuide](./Documentation/PythonStyleGuide.md) contains the writing style guide for python that I produced for Uni-Soft, in line with PEP-8 and the company preferences.  
 - The [WordpressMAMPReadme](./Documentation/WordpressMAMPReadme.md) contains a readme for installing and restoring a backup copy of a cached WordPress site with MAMP, and how to edit various aspects of the site templates in PHP. 
 
+# Machine Learning
+
+Due to privacy agreements, I am unable to showcase my work on the SegNet algorithm that was conducted at Uni-Soft. However, I can share the example code that I wrote and found useful when first starting machine learning and following the course 'Machine Learning for Physicsits' from the Max Planck Institute. These examples can be found in the [ML-Physicists-Examples](https://github.com/rorg314/ML-Physicists-Examples) repository.  
+
 # Blockchain
 
 The [Blockchain](./Blockchain) folder contains resources I produced whilst at Uni-Soft systems covering various aspects of blockchain technology (documents have been converted to markdown files for ease of viewing in GitHub). 
@@ -17,6 +21,8 @@ The [Blockchain](./Blockchain) folder contains resources I produced whilst at Un
 - A [document](./Blockchain/NFTs.md) covering NFTs and the ERC-721 protocol, with some ideas for potential applications.
 
 - A [detailed review](./Blockchain/SolanaBlockchain.md) of the Proof of Stake/History architecture used by the Solana blockchain. 
+
+
 
 # Game development
 
