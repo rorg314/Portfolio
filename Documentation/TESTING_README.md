@@ -1,6 +1,6 @@
 # Testing (pytest-django)
 
-This readme explains how to configure pytest and use it with Django applications. Information about specific tests for the file organiser are in the [FILEORGANISER_TESTS](FileOrganiser/FILEORGANISER_TESTS.md).
+This readme explains how to configure pytest and use it with Django applications. 
 
 # Setup 
 
