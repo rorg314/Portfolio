@@ -5,7 +5,8 @@ This repository contains my digital portfolio, showcasing various aspects of my 
 # Sample Documentation
 
 The [Documentation](./Documentation) folder contains sample readme documentation that I wrote whilst at Uni-Soft systems (containing generic information, not pertaining to specific products developed by the company).
-- The [PythonStyleGuide](./Documentation/PythonStyleGuide.md) contains the writing style guide for python that I produced for Uni-Soft, in line with PEP-8 and the company preferences.  
+- The [PythonStyleGuide](./Documentation/PythonStyleGuide.md) contains the writing style guide for python that I produced for Uni-Soft, in line with PEP-8 and the company preferences. 
+- The [DjangoTesting](./Documentation/DjangoTesting.md) readme contains information for how to configure and test Django application using pytest, and some good testing practices. 
 - The [WordpressMAMPReadme](./Documentation/WordpressMAMPReadme.md) contains a readme for installing and restoring a backup copy of a cached WordPress site with MAMP, and how to edit various aspects of the site templates in PHP. 
 
 # Machine Learning
