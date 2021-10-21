@@ -10,7 +10,7 @@ The [Documentation](./Documentation) folder contains sample readme documentation
 
 # Machine Learning
 
-Due to privacy agreements, I am unable to showcase my work on the SegNet algorithm that was conducted at Uni-Soft. However, I can share the example code that I wrote and found useful when first starting machine learning and following the course 'Machine Learning for Physicsits' from the Max Planck Institute. These examples can be found in the [ML-Physicists-Examples](https://github.com/rorg314/ML-Physicists-Examples) repository.  
+Due to confidentiality agreements, I am unable to showcase my work on the SegNet algorithm that was conducted at Uni-Soft. However, I can share the example code that I wrote and found useful when first starting machine learning and following the course 'Machine Learning for Physicsits' from the Max Planck Institute. These examples can be found in the [ML-Physicists-Examples](https://github.com/rorg314/ML-Physicists-Examples) repository.  
 
 # Blockchain
 
