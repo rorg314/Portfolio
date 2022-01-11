@@ -26,8 +26,13 @@ Screenshot
 Thunderbird 3 was my first model without a tutorial. Thunderbird 5 was made after I had quite a few more models under my belt!
 
 ![](Thunderbird3+5/TB3+TB5_front.png)
-![](Thunderbird3+5/TB3_TB5_side.png)
-![](Thunderbird3+5/TB5_TB3_rear.png)
+
+| | |
+|---|---|
+|![](Thunderbird3+5/TB5_TB3_rear.png)|![](Thunderbird3+5/TB3_TB5_side.png)|
+
+
+
 
 # Lula
 
@@ -43,8 +48,10 @@ The head hair was having a lot of problems..probably due to poor head topology!
 This is a model I made of a house, in order to practice texturing.
 
 ![](House/house_rear.png)
-![](House/full_house_rear.png)
-![](House/bench_conservatory_lula.png)
+| | |
+|---|---|
+|![](House/full_house_rear.png)|![](House/bench_conservatory_lula.png)|
+
 
 # Other models
 
