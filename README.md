@@ -5,8 +5,13 @@ This repository contains my digital portfolio, showcasing various aspects of my 
 # Sample Documentation
 
 The [Documentation](./Documentation) folder contains sample readme documentation that I wrote whilst at Uni-Soft systems (containing generic information, not pertaining to specific products developed by the company).
-- The [PythonStyleGuide](./Documentation/PythonStyleGuide.md) contains the writing style guide for python that I produced for Uni-Soft, in line with PEP-8 and the company preferences.  
+- The [PythonStyleGuide](./Documentation/PythonStyleGuide.md) contains the writing style guide for python that I produced for Uni-Soft, in line with PEP-8 and the company preferences. 
+- The [DjangoTesting](./Documentation/DjangoTesting.md) readme contains information for how to configure and test Django application using pytest, with a brief guide on how to write tests. 
 - The [WordpressMAMPReadme](./Documentation/WordpressMAMPReadme.md) contains a readme for installing and restoring a backup copy of a cached WordPress site with MAMP, and how to edit various aspects of the site templates in PHP. 
+
+# Machine Learning
+
+Due to confidentiality agreements, I am unable to showcase my work on the SegNet algorithm (a convolutional auto-encoder used for image segmentation) that was conducted at Uni-Soft. However, I can share the example code that I wrote and found useful when first starting machine learning and following the course 'Machine Learning for Physicsits' from the Max Planck Institute. These examples can be found in the [ML-Physicists-Examples](https://github.com/rorg314/ML-Physicists-Examples) repository.  
 
 # Blockchain
 
@@ -17,6 +22,8 @@ The [Blockchain](./Blockchain) folder contains resources I produced whilst at Un
 - A [document](./Blockchain/NFTs.md) covering NFTs and the ERC-721 protocol, with some ideas for potential applications.
 
 - A [detailed review](./Blockchain/SolanaBlockchain.md) of the Proof of Stake/History architecture used by the Solana blockchain. 
+
+
 
 # Game development
 
@@ -37,4 +44,4 @@ I am currently uploading a series of videos covering Special and General relativ
 
 ### MSc Thesis
 
-This repository also contains a copy of my [MSc thesis](./MScThesis/Edge_Modes_and_Boundary_Condition_in_Gauge_Theories.pdf), where I worked on solving an open problem in Einstein-Cartan relativity. The standard formalism implies that spacetimes with boundaries will have a degenerate boundary geometry. I derived and verified constraints for a modified Einstein-Cartan action in a half 2+1 de Sitter (+ Minkowski) spacetime that resolves this degeneracy (provided a suitable boundary cosmological constant term is introduced). 
+This repository also contains a copy of my [MSc thesis](./MScThesis/Edge_Modes_and_Boundary_Condition_in_Gauge_Theories.pdf), where I worked on solving an open problem in Einstein-Cartan relativity. The standard formalism for General Relativity implies that spacetimes with boundaries will have a degenerate boundary geometry. I derived and verified constraints for a modified Einstein-Cartan action in a half 2+1 de Sitter (+ Minkowski) spacetime that resolves this degeneracy (provided a suitable boundary cosmological constant term is introduced). 
