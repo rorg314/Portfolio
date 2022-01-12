@@ -44,12 +44,21 @@ I am currently uploading a series of videos covering Special and General relativ
 
 I regularly receive and answer questions, and really enjoy the discourse with people watching each video!
 
-![](./WHYBmaths/channel_screenshot.png)
+![](./WHYBmaths/Images/Portfolio/channel_screenshot.png)
 
-|[Relativity notes](./WHYBmaths/Relativity_Notes.pdf) | [Tensors, Topology, Manifolds notes](./WHYBmaths/TensorsTopologyManifolds.pdf) |
+|[Relativity notes](./WHYBmaths/Notes/Relativity_Notes.pdf) | [Tensors, Topology, Manifolds notes](./WHYBmaths/Notes/TensorsTopologyManifolds.pdf) |
 |-|-|
-|![](./WHYBmaths/relativity_notes_screenshot.png)|![](WHYBmaths\topology_manifolds_notes_screenshot.png)|
+|![](./WHYBmaths/Images/Portfolio/relativity_notes_screenshot.png)|![](WHYBmaths/Images/Portfolio/topology_manifolds_notes_screenshot.png)|
+
+|[Differential Geometry Revision Notes](./WHYBmaths/Relativity_Notes.pdf) | |
+|-|-|
+|![](./WHYBmaths/Images/Portfolio/DifferentialGeometryRevisionScreenshot.png)|
+
+
+
+
 # MSc Thesis - Einstein-Cartan Gravity
+
 
 This repository also contains a copy of my [MSc thesis](./MScThesis/Edge_Modes_and_Boundary_Condition_in_Gauge_Theories.pdf), where I worked on solving an open problem in Einstein-Cartan relativity. The standard formalism for General Relativity implies that spacetimes with boundaries will have a degenerate boundary geometry. I derived and verified constraints for a modified Einstein-Cartan action in a half 2+1 de Sitter (+ Minkowski) spacetime that resolves this degeneracy (provided a suitable boundary cosmological constant term is introduced). 
 
