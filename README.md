@@ -50,7 +50,7 @@ I regularly receive and answer questions, and really enjoy the discourse with pe
 |-|-|
 |![](./WHYBmaths/Images/Portfolio/relativity_notes_screenshot.png)|![](WHYBmaths/Images/Portfolio/topology_manifolds_notes_screenshot.png)|
 
-|[Differential Geometry Revision Notes](./WHYBmaths/Relativity_Notes.pdf) | |
+|[Differential Geometry Revision Notes](./WHYBmaths/Notes/DifferentialGeometryRevision.pdf) | |
 |-|-|
 |![](./WHYBmaths/Images/Portfolio/DifferentialGeometryRevisionScreenshot.png)|
 
